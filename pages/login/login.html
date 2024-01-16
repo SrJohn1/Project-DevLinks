@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="pt-br" class="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="script-login.js" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="style-login.css">
 </head>
 <body>
-    <div id="login-container">
-        <h2>Login</h2>
-        <form id="login-form" onsubmit="validateLogin(event)">
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Entrar</button>
-        </form>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <div id="profile">
+        <img
+          src="../../assets/Avatardd.png"
+          alt="foto dde Grazyelly sorrindo de perfil"
+        />
+        <p>Grazyelly Duarte</p>
+        <p>Medicina Veterinária</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span> </span>
+      </div>
+      <form action="#">
+        <input type="text" placeholder="Digite seu email">
+        <input type="password" placeholder="Digite sua senha">
+        <a href="#">Esqueceu sua senha?</a>
+        <input type="button" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Não tem uma conta? 
+         <label for="check">Inscrever-se</label>
+        </span>
+      </div>
     </div>
-
-    <script src="script-login.js"></script>
+    <div class="registration form">
+      <header>Inscrever-se</header>
+      <form action="#">
+        <input type="text" placeholder="Digite seu email" required>
+        <input type="password" placeholder="Crie sua senha">
+        <input type="password" placeholder="Confirme sua senha">
+        <input type="button" class="button" value="Inscrever-se">
+      </form>
+      <div class="signup">
+        <span class="signup">já tem uma conta?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  <script src="script-login.js"></script>
 </body>
 </html>

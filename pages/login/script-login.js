@@ -1,16 +1,20 @@
-function validateLogin(event) {
-    event.preventDefault();
+function toggleMode() {
+    const html = document.documentElement;
 
-    // Obter valores de entrada
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    // if (html.classList.contains('light')) {
+    //     html.classList.remove('light');
+    // } else {
+    //     html.classList.add('light');
+    // }
 
-    // Simular autenticação (substitua isso por um backend real)
-    if (username === 'admin' && password === '123') {
-        // Redirecionar para a página de consulta após o login bem-sucedido
-        window.location.href = '/pages/consulta/consulta.html';
+    html.classList.toggle('light');
 
-    } else {
-        alert('Nome de usuário ou senha incorretos. Tente novamente.');
-    }
+    // Cria um objeto de áudio
+    var audio = new Audio('../../assets/click-buton.wav'); // Substitua pelo caminho do seu arquivo de som
+    audio.volume = 0.3;
+    // Reproduz o som
+    audio.play();
+
 }
+
+
