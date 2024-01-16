@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login & Registration Form</title>
-  <!---Custom CSS File--->
-  <link rel="stylesheet" href="style-login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login & Registration Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style-login.css">
 </head>
+
 <body>
-  <div class="container">
-    <input type="checkbox" id="check">
-    <div class="login form">
-      <header>Login</header>
-      <div id="profile">
-        <img src="../../assets/Avatardd.png" alt="foto de Grazyelly sorrindo de perfil">
-        <p>Grazyelly Duarte</p>
-        <p>Medicina Veterinária</p>
-      </div>
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span> </span>
-      </div>
-      <form id="loginForm" onsubmit="login(event)">
-        <input type="text" id="emailInput" placeholder="Digite seu email">
-        <input type="password" id="passwordInput" placeholder="Digite sua senha">
-        <a href="#">Esqueceu sua senha?</a>
-        <input type="submit" class="button" value="Login">
-      </form>
-      <div class="signup">
-        <span class="signup">Não tem uma conta? 
-         <label for="check">Inscrever-se</label>
-        </span>
-      </div>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Login</header>
+            <div id="profile">
+                <img src="../../assets/Avatardd.png" alt="foto de Grazyelly sorrindo de perfil">
+                <p>Grazyelly Duarte</p>
+                <p>Medicina Veterinária</p>
+            </div>
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span> </span>
+            </div>
+            <form id="loginForm" onsubmit="login(event)">
+                <input type="text" id="emailInput" placeholder="Digite seu email">
+                <input type="password" id="passwordInput" placeholder="Digite sua senha">
+                <a href="#">Esqueceu sua senha?</a>
+                <input type="submit" class="button" value="Login">
+            </form>
+            <div class="signup">
+                <span class="signup">Não tem uma conta?
+                    <label for="check">Inscrever-se</label>
+                </span>
+            </div>
+        </div>
+        <div class="registration form">
+            <header>Inscrever-se</header>
+            <form action="#">
+                <input type="text" placeholder="Digite seu email" required>
+                <input type="password" placeholder="Crie sua senha">
+                <input type="password" placeholder="Confirme sua senha">
+                <input type="button" class="button" value="Inscrever-se">
+            </form>
+            <div class="signup">
+                <span class="signup">já tem uma conta?
+                    <label for="check">Login</label>
+                </span>
+            </div>
+        </div>
     </div>
-    <div class="registration form">
-      <header>Inscrever-se</header>
-      <form action="#">
-        <input type="text" placeholder="Digite seu email" required>
-        <input type="password" placeholder="Crie sua senha">
-        <input type="password" placeholder="Confirme sua senha">
-        <input type="button" class="button" value="Inscrever-se">
-      </form>
-      <div class="signup">
-        <span class="signup">já tem uma conta?
-         <label for="check">Login</label>
-        </span>
-      </div>
-    </div>
-  </div>
-  <footer>
-  </footer>
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-  <script src="script-login.js"></script>
+    <footer>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script-login.js"></script>
 
 
-  </script>
+    </script>
 </body>
+
 </html>

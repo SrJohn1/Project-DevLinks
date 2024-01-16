@@ -18,6 +18,7 @@ function toggleMode() {
 }
 
 
+
 function login(event) {
     // Evite o envio padrão do formulário
     event.preventDefault();
@@ -28,9 +29,25 @@ function login(event) {
 
     // Verifique as credenciais (ajuste conforme necessário)
     if (email === "grazydd@gmail.com" && password === "123") {
-      alert("Login bem-sucedido! Você pode adicionar redirecionamento ou outras ações aqui.");
+        // Personalize a mensagem do alerta
+        Swal.fire({
+            title: "Login efetuado com sucesso!",
+            text: "Encaminhado para a página de consulta",
+            icon: "success"
+        }).then((result) => {
+            // Redirecionar para outra página após o login bem-sucedido
+            if (result.isConfirmed) {
+                window.location.href = "../../pages/consulta/consulta.html"; // Substitua "pagina_consulta.html" pelo caminho desejado
+            }
+        });
+        
     } else {
-      alert("Login falhou. Verifique seu email e senha.");
+        Swal.fire({
+            title: "Ops!",
+            text: "Verifique sua senha ou seu email",
+            icon: "error"
+        });
     }
-}
 
+
+}
