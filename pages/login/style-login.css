@@ -205,3 +205,41 @@ body {
     left: 0%;
   }
 }
+
+
+/* Seus estilos CSS existentes */
+
+/* Adicionando Media Query para telas menores (máximo 600px) */
+/* media queries */
+@media only screen and (max-width: 600px) {
+  body{
+    background: var(--bg-url);
+  }
+
+  body .light {
+    --bg-url: url(../../assets/bg-dd-light.jpg);
+  }
+}
+
+/* Media Query para telas de tablets (mínimo 601px e máximo 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body :root {
+    --bg-url: url(../../assets/bg-dd-dark.jpg);
+
+  }
+
+  body .light {
+    --bg-url: url(../../assets/bg-dd-light.jpg);
+  }
+}
+
+/* Media Query para telas maiores que 1024px */
+@media only screen and (min-width: 1025px) {
+  body :root {
+    --bg-url: url(../../assets/bg-dd-dark.jpg);
+  }
+
+  body .light {
+    --bg-url: url(../../assets/bg-dd-light.jpg);
+  }
+}

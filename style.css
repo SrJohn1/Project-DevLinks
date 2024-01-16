@@ -43,6 +43,7 @@ body {
 #container {
   width: 360px;
   padding: 0 24px;
+ 
 
   margin: 56px auto 0px;
 }
@@ -202,3 +203,12 @@ footer a:hover {
   }
 }
 
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(../../assets/bg-dd-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(../../assets/bg-dd-light.jpg);
+  }
+}
