@@ -8,7 +8,7 @@ function validateLogin(event) {
     // Simular autenticação (substitua isso por um backend real)
     if (username === 'admin' && password === '123') {
         // Redirecionar para a página de consulta após o login bem-sucedido
-        window.location.href = 'consulta.html';
+        window.location.href = 'file:///D:/ProjetoDiscover/pages/consulta/consulta.html';
     } else {
         alert('Nome de usuário ou senha incorretos. Tente novamente.');
     }
