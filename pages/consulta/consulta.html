@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Veterinária</title>
+    <link rel="stylesheet" href="style-consulta.css"">
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Consulta</h1>
+    </header>
+
+    <section id="appointmentForm">
+        <h2>Marque sua Consulta</h2>
+        <form id="consultationForm">
+            <label for="petName">Nome do Animal:</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <label for="ownerName">Nome do Proprietário:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <label for="contactNumber">Número de Contato:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+
+            <label for="appointmentDate">Data da Consulta:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Horário da Consulta:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <button type="submit">Agendar Consulta</button>
+        </form>
+    </section>
+
+    <section id="appointmentList">
+        <h2>Próximas Consultas Agendadas</h2>
+        <ul id="upcomingAppointments">
+            <!-- Aqui serão exibidas as consultas agendadas -->
+        </ul>
+    </section>
+
+    <script src="script-consulta.js"></script>
+</body>
+</html>
