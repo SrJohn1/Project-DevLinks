@@ -18,3 +18,19 @@ function toggleMode() {
 }
 
 
+function login(event) {
+    // Evite o envio padrão do formulário
+    event.preventDefault();
+
+    // Obtenha os valores inseridos
+    var email = document.getElementById("emailInput").value;
+    var password = document.getElementById("passwordInput").value;
+
+    // Verifique as credenciais (ajuste conforme necessário)
+    if (email === "grazydd@gmail.com" && password === "123") {
+      alert("Login bem-sucedido! Você pode adicionar redirecionamento ou outras ações aqui.");
+    } else {
+      alert("Login falhou. Verifique seu email e senha.");
+    }
+}
+

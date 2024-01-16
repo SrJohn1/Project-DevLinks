@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="pt-br" class="light">
 <head>
   <meta charset="UTF-8">
@@ -15,10 +14,7 @@
     <div class="login form">
       <header>Login</header>
       <div id="profile">
-        <img
-          src="../../assets/Avatardd.png"
-          alt="foto dde Grazyelly sorrindo de perfil"
-        />
+        <img src="../../assets/Avatardd.png" alt="foto de Grazyelly sorrindo de perfil">
         <p>Grazyelly Duarte</p>
         <p>Medicina Veterinária</p>
       </div>
@@ -26,11 +22,11 @@
         <button></button>
         <span> </span>
       </div>
-      <form action="#">
-        <input type="text" placeholder="Digite seu email">
-        <input type="password" placeholder="Digite sua senha">
+      <form id="loginForm" onsubmit="login(event)">
+        <input type="text" id="emailInput" placeholder="Digite seu email">
+        <input type="password" id="passwordInput" placeholder="Digite sua senha">
         <a href="#">Esqueceu sua senha?</a>
-        <input type="button" class="button" value="Login">
+        <input type="submit" class="button" value="Login">
       </form>
       <div class="signup">
         <span class="signup">Não tem uma conta? 
@@ -53,14 +49,19 @@
       </div>
     </div>
   </div>
+  <footer>
+  </footer>
   <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
   <script src="script-login.js"></script>
+
+
+  </script>
 </body>
 </html>
