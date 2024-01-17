@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body * {
+    font-family: "Inter", sans-serif;
+}
+
 /* Cores */
 :root {
     --azul-bebe: #add8e6;
@@ -46,6 +50,16 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    text-decoration: none;
+    padding-left: 50px;
+    
+    align-items: center;
+    border-radius: 5px;
+    height: 38px;
+    width: 200px;
 }
 
 label {

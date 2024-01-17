@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const contactNumber = document.getElementById('contactNumber').value;
         const appointmentDate = document.getElementById('appointmentDate').value;
         const appointmentTime = document.getElementById('appointmentTime').value;
-
+        const animalBreed =document.getElementById('animalBreed').value;
         // Crie um item da lista para a nova consulta
         const newAppointmentItem = document.createElement('li');
         newAppointmentItem.innerHTML = `
             <strong>${petName}</strong> (${ownerName}) - ${appointmentDate} às ${appointmentTime}<br>
-            Contato: ${contactNumber}
+            Contato: ${contactNumber} raca ${animalBreed}
         `;
 
         // Adicione o item à lista de consultas agendadas
