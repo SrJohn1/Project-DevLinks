@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto Feito atraves do curso discover com o projeto DevLinks pela Rocketseat </h1>
+<h1 align="center"> Feito através do curso discover com o projeto DevLinks pela Rocketseat </h1>
 
 <p align="center">
 Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
@@ -9,8 +9,6 @@ Pomeio deste estou realizando o ProProjeto Grazielly Duarte <br/>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- 
-  
 </p>
 
 <p align="center">

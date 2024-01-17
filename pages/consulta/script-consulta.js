@@ -10,12 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
         const contactNumber = document.getElementById('contactNumber').value;
         const appointmentDate = document.getElementById('appointmentDate').value;
         const appointmentTime = document.getElementById('appointmentTime').value;
-        const animalBreed =document.getElementById('animalBreed').value;
+        const animalBreed = document.getElementById('animalBreed').value;
+
         // Crie um item da lista para a nova consulta
         const newAppointmentItem = document.createElement('li');
+        newAppointmentItem.classList.add('appointment-item'); // Adiciona uma classe para estilização
+
         newAppointmentItem.innerHTML = `
-            <strong>${petName}</strong> (${ownerName}) - ${appointmentDate} às ${appointmentTime}<br>
-            Contato: ${contactNumber} raca ${animalBreed}
+            <div class="appointment-details">
+                <strong>${petName}</strong> (${ownerName})<br>
+                <span>Data: ${appointmentDate}</span><br>
+                <span>Horário: ${appointmentTime}</span><br>
+                <span>Contato: ${contactNumber}</span><br>
+                <span>Raça: ${animalBreed}</span>
+            </div>
         `;
 
         // Adicione o item à lista de consultas agendadas

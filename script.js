@@ -11,7 +11,7 @@ function toggleMode() {
 
     // Cria um objeto de áudio
     var audio = new Audio('assets/click-buton.wav'); // Substitua pelo caminho do seu arquivo de som
-    audio.volume = 0.3;
+    audio.volume = 0.1;
     // Reproduz o som
     audio.play();
 

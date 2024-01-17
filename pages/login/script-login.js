@@ -28,7 +28,7 @@ function login(event) {
     var password = document.getElementById("passwordInput").value;
 
     // Verifique as credenciais (ajuste conforme necessário)
-    if (email === "grazydd@gmail.com" && password === "123") {
+    if (email === "" && password === "") {
         // Personalize a mensagem do alerta
         Swal.fire({
             title: "Login efetuado com sucesso!",
