@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Site Grazielly Duarte é um agregador de links para usar como cartão de visitas online.
+Algumas coisas ainda estou aprendendo para implementar posteiormente 
 
 - [Acesse ao andamento do projeto, online](https://srjohn1.github.io/Project-DevLinks/#)
 

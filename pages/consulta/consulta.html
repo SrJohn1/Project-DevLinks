@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consulta Veterinária</title>
     <link rel="stylesheet" href="style-consulta.css"">
     <link
-    href=" https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-</head>
+      href=" https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Agendamento de Consulta</h1>
+      <h1>Agendamento de Consulta</h1>
     </header>
 
     <section id="appointmentForm">
-        <h2>Marque sua Consulta</h2>
-        <form id="consultationForm">
-            <label for="petName">Nome do Animal:</label>
-            <input type="text" id="petName" name="petName" required>
-            <label for="petName">Raca do Animal:</label>
-            <select name="animal breed" id="animalBreed" class="Animal">
-                <option value="Pastor Alemao">Pastor Alemao</option>
-                <option value="Podlle">Podlle</option>
-                <option value="Vira lata">Vira lata</option>
-                <option value="Rotvailer">Rotvailer</option>
-            </select>
-            <label for="ownerName">Nome do Proprietário:</label>
-            <input type="text" id="ownerName" name="ownerName" required>
+      <h2>Marque sua Consulta</h2>
+      <form id="consultationForm">
+        <label for="petName">Nome do Animal:</label>
+        <input type="text" id="petName" name="petName" required />
+        <label for="petName">Raca do Animal:</label>
+        <select name="animal breed" id="animalBreed" class="Animal">
+          <option value="Pastor Alemao">Pastor Alemao</option>
+          <option value="Podlle">Podlle</option>
+          <option value="Vira lata">Vira lata</option>
+          <option value="Rotvailer">Rotvailer</option>
+        </select>
+        <label for="ownerName">Nome do Proprietário:</label>
+        <input type="text" id="ownerName" name="ownerName" required />
 
-            <label for="contactNumber">Número de Contato:</label>
-            <input type="tel" id="contactNumber" name="contactNumber" required>
+        <label for="contactNumber">Número de Contato:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required />
 
-            <label for="appointmentDate">Data da Consulta:</label>
-            <input type="date" id="appointmentDate" name="appointmentDate" required>
+        <label for="appointmentDate">Data da Consulta:</label>
+        <input
+          type="date"
+          id="appointmentDate"
+          name="appointmentDate"
+          required
+        />
 
-            <label for="appointmentTime">Horário da Consulta:</label>
-            <input type="time" id="appointmentTime" name="appointmentTime" required>
+        <label for="appointmentTime">Horário da Consulta:</label>
+        <input
+          type="time"
+          id="appointmentTime"
+          name="appointmentTime"
+          required
+        />
 
-            <button type="submit">Agendar Consulta</button>
-
-
-        </form>
+        <button type="submit">Agendar Consulta</button>
+      </form>
+    </section>
 
     <section id="appointmentList">
-            <h2 id="consult">Próximas Consultas Agendadas</h2>
-            <ul id="upcomingAppointments">
-                <!-- Aqui serão exibidas as consultas agendadas -->
-            </ul>
-        </section>
-
-
-
-
-
-
-        <script src="script-consulta.js"></script>
-</body>
-
+      <h2 id="consult">Próximas Consultas Agendadas</h2>
+      <ul id="upcomingAppointments">
+        <!-- Aqui serão exibidas as consultas agendadas -->
+      </ul>
+    </section>
+    <script src="script-consulta.js"></script>
+  </body>
 </html>
