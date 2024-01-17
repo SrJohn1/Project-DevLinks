@@ -9,12 +9,12 @@ Pomeio deste estou realizando o ProProjeto Grazielly Duarte <br/>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+ 
+  
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <img alt="License" src="assets/layougdd.jpg">
 </p>
 
 <br>
@@ -38,11 +38,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Site Grazielly Duarte é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse ao andamento do projeto, online](https://maykbrito.github.io/devlinks)
+- [Acesse ao andamento do projeto, online](https://srjohn1.github.io/Project-DevLinks/#)
 
 
 
-## :memo: Licença
+
 
 Esse projeto está sob a licença MIT.
 
